@@ -118,7 +118,7 @@
   \renewcommand*{\glossaryheader}{%
     \bfseries \ifthenelse{\boolean{isGerman}}{Abk. & Bedeutung}{Abbr. & Meaning} \\ \hline\endhead}%
   \renewcommand*{\glossentry}[2]{%
-    \glsentryshort{##1} & \glsentrylong{##1} \\}%
+    \glstarget{##1}{\glsentryshort{##1}} & \glsentrylong{##1} \\}%
 }
 
 % --------------------------------------------------------------------
